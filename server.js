@@ -6,7 +6,7 @@ const app = express()
 const port = 3000
 
 app.use(express.json())
-// app.set(vie,'ejs')
+app.set(vie,'ejs')
 app.post('/create-file',(req,res)=>{
     const {filename,content} = req.body
     if(!filename){
